@@ -1,0 +1,133 @@
+/* Regular */
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('resources/fonts/CooperHewitt-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('resources/fonts/CooperHewitt-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Cooper Hewitt', sans-serif;
+    color: #545454;
+    background: url("resources/background/background.png") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: -1;
+}  
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    justify-items: center; 
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.trophies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.trophy {
+    background: #7db2ff;
+    color: #545454;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    display: flex;          
+    align-items: center;    
+    gap: 8px;           
+    font-size: 1.5rem;
+}
+
+.trophy img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;    
+    object-fit: cover;   
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.player-card {
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.player-body {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.player-left p,
+.player-right p {
+    margin: 4px 0;
+    font-size: 18px;
+}  
+
+.life-3 { background: #9effa1; }
+.life-2 { background: #fff599; }
+.life-1 { background: #ff9999; }
+.life-0 { background: #d3d3d3; }
+
+.player-card h2 {
+    margin-top: 0;
+}
