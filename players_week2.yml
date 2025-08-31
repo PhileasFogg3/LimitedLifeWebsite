@@ -1,0 +1,108 @@
+players:
+  47815705-19f5-4fee-851b-2d6e828a41f4:
+    Boogeyman: false
+    Life: 2
+    Time: 57453
+    Online: false
+    Deaths:
+    - Creeper
+    - PhileasFogg3
+  28545a7d-257a-47b5-99aa-aed33aea1faf:
+    Boogeyman: false
+    Life: 3
+    Time: 62853
+    Online: false
+    Deaths:
+    - PhileasFogg3
+    Kills:
+    - PhileasFogg3
+  ce5a9196-e1ac-4418-aae1-5608998b4292:
+    Boogeyman: false
+    Life: 3
+    Time: 64653
+    Online: true
+    Deaths:
+    - Drowning
+    Kills:
+    - PhileasFogg3
+  a97c8875-fbaf-4028-9c20-641e009fbec7:
+    Boogeyman: false
+    Life: 3
+    Time: 62853
+    Online: false
+    Deaths:
+    - Lava
+    Kills:
+    - FatArmadillo
+  13b48133-34e3-4549-aa66-a314a2580af8:
+    Boogeyman: false
+    Life: 2
+    Time: 57453
+    Online: false
+    Deaths:
+    - ItsGeppy
+    - Nikatto
+    Kills:
+    - ItsGeppy
+    - Mewhen123
+  e74f7336-21b5-4ff7-8924-cae6d6ebc8b8:
+    Boogeyman: false
+    Life: 3
+    Time: 64893
+    Online: false
+    Deaths:
+    - Skeleton
+    Kills:
+    - jbk1000009
+  baceb77d-8bb4-45c6-8d54-1a0d352366ac:
+    Boogeyman: false
+    Life: 2
+    Time: 57555
+    Online: false
+    Deaths:
+    - fandome
+    - Zombie
+    - OweeWan
+    Kills:
+    - miguelrde
+  9efe16d0-0fce-4d4c-9c6b-e057b6df53f6:
+    Boogeyman: false
+    Life: 2
+    Time: 54067
+    Online: false
+    Deaths:
+    - JHWAFC
+    - Skeleton
+    Kills:
+    - FatArmadillo
+  c660b9d5-3ad2-4090-b871-da945a2c68a1:
+    Boogeyman: false
+    Life: 2
+    Time: 57453
+    Online: false
+    Deaths:
+    - willfreckles
+    Kills:
+  ce652404-6b3b-4395-b60e-14ad894e623d:
+    Boogeyman: false
+    Life: 3
+    Time: 61118
+    Online: false
+    Deaths:
+    - Lava
+    Kills:
+  dbd73e85-fb0b-4d38-92e6-5cf42c192813:
+    Boogeyman: false
+    Life: 3
+    Time: 68253
+    Online: false
+    Kills:
+    - OweeWan
+  0f830996-e88c-43cc-96ef-88a821924692:
+    Boogeyman: false
+    Life: 3
+    Time: 60976
+    Online: false
+    Deaths:
+    - FatArmadillo
+    Kills:
