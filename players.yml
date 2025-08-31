@@ -24,7 +24,6 @@ players:
     - fandome
     - fandome
     - fandome
-    - fandome
     - willfreckles
     - willfreckles
     - FatArmadillo
@@ -63,7 +62,7 @@ players:
     - ItsGeppy
     - Lava
     - ItsGeppy
-    - ItsGeppy
+    - jbk1000009
     - Zombie
     Kills:
     - FatArmadillo
@@ -133,7 +132,13 @@ players:
     Deaths:
     - willfreckles
     - willfreckles
-    First Infected: 1
+    Kills:
+    - FatArmadillo
+    - willfreckles
+    - fandome
+    - fandome
+    - JHWAFC
+    - OweeWan
   ce652404-6b3b-4395-b60e-14ad894e623d:
     Boogeyman: true
     Life: 2
