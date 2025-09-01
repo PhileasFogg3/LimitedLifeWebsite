@@ -134,8 +134,12 @@ h3 {
 .player-right p {
     margin: 4px 0;
     font-size: 18px;
-    padding-right: 40px;
+    padding-right: 30px;
 }  
+
+.player-right b {
+    color: #141414
+} 
 
 .life-3 { background: #9effa1; }
 .life-2 { background: #fff599; }
