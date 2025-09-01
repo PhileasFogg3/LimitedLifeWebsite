@@ -31,7 +31,8 @@ async function loadPlayers() {
       time: p.Time,
       life: p.Life,
       deaths: p.Deaths || [],
-      kills: p.Kills || []
+      kills: p.Kills || [],
+      infectedwinner: p.InfectedWinner
     });
   }    
 
@@ -80,24 +81,32 @@ function render(players) {
     const div = document.createElement("div");
     div.className = `player-card life-${p.life}`;
     div.innerHTML = `
-    <div class="player-header">
-      <img src="resources/player_heads/${p.name}.png" alt="${p.name}" width="48" height="48">
-      <h2>${p.name}</h2>
-    </div>
-    <div class="player-body">
-      <div class="player-left">
-        <p>${formatTime(p.time)}</p>
-        <p>Deaths: ${p.deaths.length}</p>
-        <p>Kills: ${p.kills.length}</p>
+      <div class="player-header">
+        <img src="resources/player_heads/${p.name}.png" alt="${p.name}" width="64" height="64">
+        <div>
+            <h2>
+               ${p.name}
+            </h2>
+            <h2 class="infected">
+              ${p.infectedwinner ? `Infected Winner` : ""}
+            </h2>
+        </div>
       </div>
-      <div class="player-right">
-        ${p.deaths.length ? `<p><b>Killed By:</b><br>${p.deaths.join("<br>")}</p>` : ""}
-        ${p.kills.length ? `<p><b>Killed:</b><br>${p.kills.join("<br>")}</p>` : ""}
+      <div class="player-body">
+        <div class="player-left">
+          <p>${formatTime(p.time)}</p>
+          <p>Deaths: ${p.deaths.length}</p>
+          <p>Kills: ${p.kills.length}</p>
+        </div>
+        <div class="player-right">
+          ${p.deaths.length ? `<p><b>Killed By:</b><br>${p.deaths.join("<br>")}</p>` : ""}
+          ${p.kills.length ? `<p><b>Killed:</b><br>${p.kills.join("<br>")}</p>` : ""}
+        </div>
       </div>
-    </div>
-  `;    
+    `;    
     playersDiv.appendChild(div);
-  });
+    console.log(p)
+  });  
 }
   
 loadPlayers();

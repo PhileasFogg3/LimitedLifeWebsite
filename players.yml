@@ -32,6 +32,7 @@ players:
     - JHWAFC
     - miguelrde
     - Nikatto
+    InfectedWinner: true
   ce5a9196-e1ac-4418-aae1-5608998b4292:
     Boogeyman: true
     Life: 2
