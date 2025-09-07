@@ -32,7 +32,8 @@ async function loadPlayers() {
       life: p.Life,
       deaths: p.Deaths || [],
       kills: p.Kills || [],
-      infectedwinner: p.InfectedWinner
+      infectedwinner: p.InfectedWinner,
+      firstout: p.FirstOut
     });
   }    
 
@@ -49,7 +50,9 @@ function formatTime(seconds) {
 function render(players) {
   // --- TROPHIES ---
   const mostTime = players.reduce((a,b) => a.time > b.time ? a : b);
-  const leastTime = players.reduce((a,b) => a.time < b.time ? a : b);
+  const leastTime = players
+  .filter(p => p.time > 0)
+  .reduce((a, b) => (a.time < b.time ? a : b));
   const mostKills = players.reduce((a,b) => a.kills.length > b.kills.length ? a : b);
   const mostDeaths = players.reduce((a,b) => a.deaths.length > b.deaths.length ? a : b);
 
@@ -89,6 +92,7 @@ function render(players) {
             </h2>
             <h2 class="infected">
               ${p.infectedwinner ? `Infected Winner` : ""}
+              ${p.firstout ? `First Eliminated` : ""}
             </h2>
         </div>
       </div>

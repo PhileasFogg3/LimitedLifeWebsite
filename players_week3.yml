@@ -1,29 +1,23 @@
 players:
   47815705-19f5-4fee-851b-2d6e828a41f4:
     Boogeyman: true
-    Life: 1
-    Time: 18274
+    Life: 2
+    Time: 39889
     Online: false
     Deaths:
     - Creeper
     - PhileasFogg3
     - Skeleton
     - willfreckles
-    - Zombie
-    - Skeleton
-    - PhileasFogg3
   28545a7d-257a-47b5-99aa-aed33aea1faf:
     Boogeyman: true
-    Life: 2
-    Time: 53709
+    Life: 3
+    Time: 71716
     Online: false
     Deaths:
     - PhileasFogg3
     - Gravity
     - PhileasFogg3
-    - PhileasFogg3
-    - PhileasFogg3
-    - His own trap lol
     Kills:
     - PhileasFogg3
     - PhileasFogg3
@@ -38,13 +32,11 @@ players:
     - JHWAFC
     - miguelrde
     - Nikatto
-    - PhileasFogg3
-    - PhileasFogg3
     InfectedWinner: true
   ce5a9196-e1ac-4418-aae1-5608998b4292:
     Boogeyman: true
     Life: 2
-    Time: 32079
+    Time: 39316
     Online: false
     Deaths:
     - Drowning
@@ -56,8 +48,8 @@ players:
     - PhileasFogg3
   a97c8875-fbaf-4028-9c20-641e009fbec7:
     Boogeyman: true
-    Life: 0
-    Time: 0
+    Life: 1
+    Time: 13516
     Online: false
     Deaths:
     - Lava
@@ -73,58 +65,41 @@ players:
     - ItsGeppy
     - jbk1000009
     - Zombie
-    - Gravity
-    - Suffocation
-    - Gravity
-    - Gravity
-    - jbk1000009
     Kills:
     - FatArmadillo
-    - Sweetlittlebee02
-    - OweeWan
-    - Sweetlittlebee02
-    FirstOut: true
   13b48133-34e3-4549-aa66-a314a2580af8:
     Boogeyman: true
     Life: 2
-    Time: 32101
+    Time: 48316
     Online: true
     Deaths:
     - ItsGeppy
     - Nikatto
     - FatArmadillo
     - ItsGeppy
-    - ItsGeppy
-    - ItsGeppy
-    - Sweetlittlebee02
     Kills:
     - ItsGeppy
     - Mewhen123
     - fandome
     - fandome
     - miguelrde
-    - ItsGeppy
-    - ItsGeppy
-    - Mewhen123
   e74f7336-21b5-4ff7-8924-cae6d6ebc8b8:
     Boogeyman: true
-    Life: 1
-    Time: 27899
+    Life: 2
+    Time: 45899
     Online: true
     Deaths:
     - Skeleton
     - jbk1000009
     - ItsGeppy
     - ItsGeppy
-    - Skeleton
-    - Lava
     Kills:
     - jbk1000009
     - Mewhen123
   baceb77d-8bb4-45c6-8d54-1a0d352366ac:
     Boogeyman: true
-    Life: 1
-    Time: 25033
+    Life: 2
+    Time: 35818
     Online: true
     Deaths:
     - fandome
@@ -138,8 +113,8 @@ players:
     - PhileasFogg3
   9efe16d0-0fce-4d4c-9c6b-e057b6df53f6:
     Boogeyman: true
-    Life: 1
-    Time: 16957
+    Life: 2
+    Time: 33659
     Online: true
     Deaths:
     - JHWAFC
@@ -148,18 +123,15 @@ players:
     - Creeper
     - Gravity
     - Skeleton
-    - fandome
-    - Creeper
     Kills:
     - FatArmadillo
   c660b9d5-3ad2-4090-b871-da945a2c68a1:
     Boogeyman: true
     Life: 2
-    Time: 44711
+    Time: 55516
     Online: true
     Deaths:
     - willfreckles
-    - Creeper
     Kills:
     - FatArmadillo
     - willfreckles
@@ -169,23 +141,17 @@ players:
     - OweeWan
   ce652404-6b3b-4395-b60e-14ad894e623d:
     Boogeyman: true
-    Life: 1
-    Time: 19818
+    Life: 2
+    Time: 42994
     Online: false
     Deaths:
     - Lava
     - fandome
     - ItsGeppy
-    - fandome
-    - Creeper
-    - Gravity
-    - Gravity
-    Kills:
-    - PhileasFogg3
   dbd73e85-fb0b-4d38-92e6-5cf42c192813:
     Boogeyman: true
     Life: 2
-    Time: 39659
+    Time: 50116
     Online: true
     Deaths:
     - jbk1000009
@@ -195,8 +161,8 @@ players:
     - fandome
   0f830996-e88c-43cc-96ef-88a821924692:
     Boogeyman: true
-    Life: 1
-    Time: 28549
+    Life: 2
+    Time: 39239
     Online: true
     Deaths:
     - FatArmadillo
