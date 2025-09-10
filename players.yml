@@ -54,6 +54,7 @@ players:
     - Gravity
     Kills:
     - PhileasFogg3
+    - Sweetlittlebee02
   a97c8875-fbaf-4028-9c20-641e009fbec7:
     Boogeyman: true
     Life: 0
@@ -83,6 +84,7 @@ players:
     - Sweetlittlebee02
     - OweeWan
     - Sweetlittlebee02
+    - jbk1000009
     FirstOut: true
   13b48133-34e3-4549-aa66-a314a2580af8:
     Boogeyman: true
@@ -159,7 +161,7 @@ players:
     Online: true
     Deaths:
     - willfreckles
-    - Creeper
+    - fandome
     Kills:
     - FatArmadillo
     - willfreckles
@@ -167,6 +169,7 @@ players:
     - fandome
     - JHWAFC
     - OweeWan
+    - fandome
   ce652404-6b3b-4395-b60e-14ad894e623d:
     Boogeyman: true
     Life: 1
@@ -177,7 +180,7 @@ players:
     - fandome
     - ItsGeppy
     - fandome
-    - Creeper
+    - Nikatto
     - Gravity
     - Gravity
     Kills:
