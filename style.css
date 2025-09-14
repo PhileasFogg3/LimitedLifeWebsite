@@ -111,8 +111,8 @@ h3 {
     padding: 12px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     font-size: 14px;
-    width: 290px;
-    height: 700px;
+    width: 330px;
+    height: 750px;
     display: flex;
     flex-direction: column;
 }
@@ -139,7 +139,7 @@ h3 {
 .player-right p {
     margin: 4px 0;
     font-size: 18px;
-    padding-right: 30px;
+    padding-right: 50px;
 }  
 
 .player-right b {

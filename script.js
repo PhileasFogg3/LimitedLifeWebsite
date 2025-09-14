@@ -99,8 +99,8 @@ function render(players) {
       <div class="player-body">
         <div class="player-left">
           <p>${formatTime(p.time)}</p>
-          <p>Deaths: ${p.deaths.length}</p>
-          <p>Kills: ${p.kills.length}</p>
+          <p>Deaths:${p.deaths.length}</p>
+          <p>Kills:${p.kills.length}</p>
         </div>
         <div class="player-right">
           ${p.deaths.length ? `<p><b>Killed By:</b><br>${p.deaths.join("<br>")}</p>` : ""}
