@@ -111,8 +111,8 @@ h3 {
     padding: 12px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     font-size: 14px;
-    width: 330px;
-    height: 750px;
+    width: 450px;
+    height: 1150px;
     display: flex;
     flex-direction: column;
 }

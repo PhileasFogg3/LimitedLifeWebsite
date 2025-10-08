@@ -1,8 +1,8 @@
 players:
   47815705-19f5-4fee-851b-2d6e828a41f4:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 5724
     Online: false
     Deaths:
     - Creeper
@@ -13,13 +13,10 @@ players:
     - Skeleton
     - PhileasFogg3
     - Creeper
-    - Skeleton
-    Kills:
-    - miguelrde
   28545a7d-257a-47b5-99aa-aed33aea1faf:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 2
+    Time: 41159
     Online: false
     Deaths:
     - PhileasFogg3
@@ -29,16 +26,6 @@ players:
     - PhileasFogg3
     - His own trap lol (TNT)
     - FatArmadillo (Baked Beans)
-    - PhileasFogg3
-    - FatArmadillo
-    - FatArmadillo
-    - jbk1000009
-    - PhileasFogg3
-    - Nikatto
-    - PhileasFogg3
-    - Baked Beans (finale)
-    - Baked Beans (finale)
-    - PhileasFogg3
     Kills:
     - PhileasFogg3
     - PhileasFogg3
@@ -55,15 +42,11 @@ players:
     - Nikatto
     - PhileasFogg3
     - PhileasFogg3
-    - Nikatto
-    - jbk1000009
-    - jbk1000009
-    - JHWAFC
     InfectedWinner: true
   ce5a9196-e1ac-4418-aae1-5608998b4292:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 19529
     Online: false
     Deaths:
     - Drowning
@@ -72,16 +55,11 @@ players:
     - Creeper
     - Gravity
     - miguelrde
-    - Gravity
-    - Gravity
-    - ItsGeppy
     Kills:
     - PhileasFogg3
     - Sweetlittlebee02
-    - ItsGeppy
-    - willfreckles
   a97c8875-fbaf-4028-9c20-641e009fbec7:
-    Boogeyman: false
+    Boogeyman: true
     Life: 0
     Time: 0
     Online: false
@@ -112,9 +90,9 @@ players:
     - jbk1000009
     FirstOut: true
   13b48133-34e3-4549-aa66-a314a2580af8:
-    Boogeyman: false
-    Life: 1
-    Time: 3003
+    Boogeyman: true
+    Life: 2
+    Time: 30403
     Online: true
     Deaths:
     - ItsGeppy
@@ -124,15 +102,6 @@ players:
     - ItsGeppy
     - ItsGeppy
     - Sweetlittlebee02
-    - miguelrde
-    - Gravity
-    - FatArmadillo
-    - (His own trap lol)
-    - jbk1000009
-    - ItsGeppy
-    - Void (finale)
-    - Baked Beans (finale)
-    - Baked Beans (finale)
     Kills:
     - ItsGeppy
     - Mewhen123
@@ -146,23 +115,10 @@ players:
     - JHWAFC
     - Sweetlittlebee02
     - FatArmadillo
-    - ItsGeppy
-    - ItsGeppy
-    - ItsGeppy
-    - ItsGeppy
-    - FatArmadillo
-    - FatArmadillo
-    - OweeWan
-    - jbk1000009
-    - jbk1000009
-    - jbk1000009
-    - jbk1000009
-    - JHWAFC
-    - miguelrde
   e74f7336-21b5-4ff7-8924-cae6d6ebc8b8:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 20749
     Online: true
     Deaths:
     - Skeleton
@@ -171,19 +127,15 @@ players:
     - ItsGeppy
     - Skeleton
     - Lava
-    - PhileasFogg3
-    - TNT
-    - JHWAFC
-    - Nikatto
     Kills:
     - jbk1000009
     - Mewhen123
     - miguelrde
     - Sweetlittlebee02
   baceb77d-8bb4-45c6-8d54-1a0d352366ac:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 17895
     Online: true
     Deaths:
     - fandome
@@ -193,24 +145,15 @@ players:
     - ItsGeppy
     - ItsGeppy
     - PhileasFogg3
-    - PhileasFogg3
-    - PhileasFogg3
-    - Gravity
-    - PhileasFogg3
-    - McBongals
     Kills:
     - miguelrde
     - PhileasFogg3
     - Sweetlittlebee02
     - ItsGeppy (Baked Beans)
-    - ItsGeppy
-    - ItsGeppy
-    - PhileasFogg3
-    - miguelrde
   9efe16d0-0fce-4d4c-9c6b-e057b6df53f6:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 14249
     Online: true
     Deaths:
     - JHWAFC
@@ -221,24 +164,16 @@ players:
     - Skeleton
     - fandome
     - Creeper
-    - Skeleton
-    - PhileasFogg3
     Kills:
     - FatArmadillo
   c660b9d5-3ad2-4090-b871-da945a2c68a1:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 2
+    Time: 32161
     Online: true
     Deaths:
     - willfreckles
     - fandome
-    - PhileasFogg3
-    - PhileasFogg3
-    - PhileasFogg3
-    - PhileasFogg3
-    - ItsGeppy
-    - ItsGeppy
     - PhileasFogg3
     Kills:
     - FatArmadillo
@@ -248,10 +183,8 @@ players:
     - JHWAFC
     - OweeWan
     - fandome
-    - ItsGeppy
-    - PhileasFogg3
   ce652404-6b3b-4395-b60e-14ad894e623d:
-    Boogeyman: false
+    Boogeyman: true
     Life: 0
     Time: 0
     Online: false
@@ -271,38 +204,26 @@ players:
     Kills:
     - PhileasFogg3
   dbd73e85-fb0b-4d38-92e6-5cf42c192813:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 27109
     Online: true
     Deaths:
     - jbk1000009
     - ItsGeppy
     - PhileasFogg3
-    - PhileasFogg3
-    - Nikatto
-    - Drowning
-    - ItsGeppy
-    - PhileasFogg3
     Kills:
     - OweeWan
     - fandome
-    - willfreckles
   0f830996-e88c-43cc-96ef-88a821924692:
-    Boogeyman: false
-    Life: 0
-    Time: 0
+    Boogeyman: true
+    Life: 1
+    Time: 17813
     Online: true
     Deaths:
     - FatArmadillo
     - Skeleton
     - PhileasFogg3
     - ItsGeppy
-    - Gravity
-    - Gravity
-    - PhileasFogg3
-    - Mewhen123
-    - FatArmadillo
     Kills:
     - Nikatto
-    - PhileasFogg3

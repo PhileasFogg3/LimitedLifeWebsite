@@ -16,7 +16,7 @@ function uuidToName(uuid) {
     default: return uuid;
   }
 }
-  
+
 async function loadPlayers() {
   const res = await fetch("players.yml");
   const yamlText = await res.text();
@@ -35,26 +35,57 @@ async function loadPlayers() {
       infectedwinner: p.InfectedWinner,
       firstout: p.FirstOut
     });
-  }    
+  }
 
   render(players);
 }
-  
+
 function formatTime(seconds) {
   const h = String(Math.floor(seconds / 3600)).padStart(2, "0");
   const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
   const s = String(seconds % 60).padStart(2, "0");
   return `${h}:${m}:${s}`;
 }
-  
+
+// Compute numerical ratio for comparison
+function getKDRatioValue(p) {
+  if (p.deaths.length === 0) return p.kills.length > 0 ? Infinity : 0;
+  return p.kills.length / p.deaths.length;
+}
+
+// Compute simplified ratio (e.g. 6:3 → 2:1)
+function simplifyRatio(kills, deaths) {
+  function gcd(a, b) {
+    return b === 0 ? a : gcd(b, a % b);
+  }
+  if (deaths === 0) return `${kills}:0 (∞)`;
+  if (kills === 0) return `0:${deaths}`;
+  const divisor = gcd(kills, deaths);
+  return `${kills / divisor}:${deaths / divisor}`;
+}
+
+// Get ratio as text for display
+function getKDRatioDisplay(p) {
+  if (p.deaths.length === 0) {
+    return p.kills.length > 0 ? `${p.kills.length}:0 (∞)` : "0:0";
+  }
+  return simplifyRatio(p.kills.length, p.deaths.length);
+}
+
 function render(players) {
   // --- TROPHIES ---
-  const mostTime = players.reduce((a,b) => a.time > b.time ? a : b);
-  const leastTime = players
-  .filter(p => p.time > 0)
-  .reduce((a, b) => (a.time < b.time ? a : b));
-  const mostKills = players.reduce((a,b) => a.kills.length > b.kills.length ? a : b);
-  const mostDeaths = players.reduce((a,b) => a.deaths.length > b.deaths.length ? a : b);
+  const mostTime = players.reduce((a, b) => a.time > b.time ? a : b);
+  const mostKills = players.reduce((a, b) => a.kills.length > b.kills.length ? a : b);
+  const mostDeaths = players.reduce((a, b) => a.deaths.length > b.deaths.length ? a : b);
+
+  // Compute best K:D ratio numerically (for ranking)
+  const bestKD = players.reduce((best, p) => {
+    const kd = getKDRatioValue(p);
+    const bestKD = getKDRatioValue(best);
+    return kd > bestKD ? p : best;
+  });
+
+  const bestKDRatioDisplay = getKDRatioDisplay(bestKD);
 
   const trophiesDiv = document.getElementById("trophies");
   trophiesDiv.innerHTML = `
@@ -71,46 +102,47 @@ function render(players) {
       <img src="resources/player_heads/${mostDeaths.name}.png" alt="${mostDeaths.name}" width="24" height="24">
     </div>
     <div class="trophy">
-      🏆 Least Time Left: ${leastTime.name}
-      <img src="resources/player_heads/${leastTime.name}.png" alt="${leastTime.name}" width="24" height="24">
+      🏆 Best K:D Ratio: ${bestKD.name} (${bestKDRatioDisplay})
+      <img src="resources/player_heads/${bestKD.name}.png" alt="${bestKD.name}" width="24" height="24">
     </div>
-  `;    
+  `;
 
   // --- PLAYERS ---
   const playersDiv = document.getElementById("players");
   playersDiv.innerHTML = "";
 
   players.forEach(p => {
+    const kdDisplay = getKDRatioDisplay(p);
+
     const div = document.createElement("div");
     div.className = `player-card life-${p.life}`;
     div.innerHTML = `
       <div class="player-header">
         <img src="resources/player_heads/${p.name}.png" alt="${p.name}" width="64" height="64">
         <div>
-            <h2>
-               ${p.name}
-            </h2>
-            <h2 class="infected">
-              ${p.infectedwinner ? `Infected Winner` : ""}
-              ${p.firstout ? `First Eliminated` : ""}
-            </h2>
+          <h2>${p.name}</h2>
+          <h2 class="infected">
+            ${p.infectedwinner ? `Infected Winner` : ""}
+            ${p.firstout ? `First Eliminated` : ""}
+          </h2>
         </div>
       </div>
       <div class="player-body">
         <div class="player-left">
           <p>${formatTime(p.time)}</p>
-          <p>Deaths:${p.deaths.length}</p>
-          <p>Kills:${p.kills.length}</p>
+          <p>Deaths: ${p.deaths.length}</p>
+          <p>Kills: ${p.kills.length}</p>
+          <p>K:D Ratio: ${kdDisplay}</p>
         </div>
         <div class="player-right">
           ${p.deaths.length ? `<p><b>Killed By:</b><br>${p.deaths.join("<br>")}</p>` : ""}
           ${p.kills.length ? `<p><b>Killed:</b><br>${p.kills.join("<br>")}</p>` : ""}
         </div>
       </div>
-    `;    
+    `;
     playersDiv.appendChild(div);
-    console.log(p)
-  });  
+    console.log(p);
+  });
 }
-  
+
 loadPlayers();
